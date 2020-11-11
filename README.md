@@ -16,7 +16,7 @@
 
 ##### Downloading and installing steps
 
-1.  **[Download](https://github.com/jay1934/Text-Channels/archive/main.zip)** the `zip` file.
+1.  **[Download](https://github.com/jay1934/Temp-Text-Channels/archive/main.zip)** the `zip` file.
 
 2.  Configure the Bot:
 
