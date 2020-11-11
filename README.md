@@ -22,7 +22,7 @@
 
     - Run `npm i`
     - You will need to [create a bot application](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot) in the **[developers space](https://discordapp.com/developers/applications/me)**
-    - Replace the placeholders in [`config.json`](/config.json) with your preferred settings and your token.
+    - Replace the placeholders in [`config.json`](/config.json) with your preferred settings and your token (there are already example values in there, but the token and chnanel ID are invalid, so make sure to change it).
 
 3.  Invite the Bot to your Server:
 
