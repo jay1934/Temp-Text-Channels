@@ -16,13 +16,13 @@
 
 ##### Downloading and installing steps
 
-1.  **[Download](https://github.com/jay1934/Temp-Text-Channels/archive/main.zip)** the `zip` file.
+1.  **[Download](https://github.com/jay1934/Text-Channels/archive/main.zip)** the `zip` file.
 
 2.  Configure the Bot:
 
     - Run `npm i`
     - You will need to [create a bot application](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot) in the **[developers space](https://discordapp.com/developers/applications/me)**
-    - Replace the placeholders in [`config.json`](/config.json) with your preferred settings and your token (there are already example values in there, but the token and chnanel ID are invalid, so make sure to change it).
+    - Replace the placeholders in [`config.json`](/config.json) with your preferred settings and your token.
 
 3.  Invite the Bot to your Server:
 

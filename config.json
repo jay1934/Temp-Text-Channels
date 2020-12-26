@@ -1,5 +1,8 @@
 {
+  "prefix": "!",
+  "mutedRoleID": "771520420671127562",
+  "logChannelID": "775826394688651315",
   "channelID": "775841602668593152",
-  "millisecondsBeforeUnlock": 300000,
-  "token": "Nzc1NzAwOTU1NDc4ODg0Mzgy.X6qJzw.nxzggn9lKWB57IVQ-uplja3abRY"
+  "millisecondsBeforeUnlock": 30000,
+  "token": "NzcyMjA2MDQ2MTkwMTA4Njcy.X53S7A.5MSYDFEjEn9KCskJShkT6Sdfb5o"
 }
