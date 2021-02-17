@@ -10,25 +10,26 @@ module.exports = (message) => {
     message.author.bot ||
     !message.guild ||
     !message.content ||
-    !message.content.startsWith(prefix)
   )
     return;
 
-  const error = (content) =>
-    message.channel
-      .send(`:x: ${content}`)
-      .then((msg) => msg.delete({ timeout: 4000 }));
+  if (message.content.startsWith(prefix)) {
+    const error = (content) =>
+      message.channel
+        .send(`:x: ${content}`)
+        .then((msg) => msg.delete({ timeout: 4000 }));
 
-  const [name, ...args] = message.content.slice(prefix.length).split(/ +/);
-  const command = message.client.commands.find((_, match) =>
-    new RegExp(`^(${match})$`).test(name)
-  );
-  if (command) {
-    try {
-      command.execute(message, args, error);
-    } catch (e) {
-      console.log(e);
-      error('Something went wrong');
+    const [name, ...args] = message.content.slice(prefix.length).split(/ +/);
+    const command = message.client.commands.find((_, match) =>
+      new RegExp(`^(${match})$`).test(name)
+    );
+    if (command) {
+      try {
+        command.execute(message, args, error);
+      } catch (e) {
+        console.log(e);
+        error('Something went wrong');
+      }
     }
   }
   if (message.channel.id !== channelID) return;
