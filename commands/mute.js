@@ -34,14 +34,6 @@ module.exports = {
       return error(`This member is already muted`);
 
     if (
-      member.roles.highest.position >= message.member.roles.highest.position &&
-      message.member.id !== message.guild.ownerID
-    )
-      return error(
-        "You can't mute someone who's highest role is above or equal to yours"
-      );
-
-    if (
       member.roles.highest.position >= message.guild.me.roles.highest.positions
     )
       return error(
