@@ -9,7 +9,7 @@ module.exports = (message) => {
   if (
     message.author.bot ||
     !message.guild ||
-    !message.content ||
+    !message.content
   )
     return;
 
